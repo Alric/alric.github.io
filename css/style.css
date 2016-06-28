@@ -1,0 +1,90 @@
+html, body{height:100%;}
+
+body {
+  /* default screen, non-retina */
+  background: url(http://s3.amazonaws.com/tenhundfeld.org/img/blueridge_1440.jpg);
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  margin-top: 0px;
+  margin-left: 40px;
+  position: absolute;
+}
+
+h1 {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 5px;
+}
+
+nav {
+  margin: auto;
+  text-align: center;
+}
+
+/* bring in CSS PIE for older IE support? http://css3pie.com/documentation/supported-css3-features/#pie-background */
+/* add license information for Shutterstock photo */
+
+@media only screen and (max-width: 360px) {
+  /* Small screen, non-retina */
+  body { background-image: url("http://s3.amazonaws.com/tenhundfeld.org/img/blueridge_360.jpg"); }
+  header { margin-left: 20px; }
+  h1 { font-size: 36px; }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 720px) {
+  /* Medium wide screen, non-retina */
+  body { background-image: url("http://s3.amazonaws.com/tenhundfeld.org/img/blueridge_720.jpg"); }
+  h1 { font-size: 36px; }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* Medium wide screen, non-retina */
+  body { background-image: url("http://s3.amazonaws.com/tenhundfeld.org/img/blueridge_1920.jpg"); }
+}
+
+@media only screen and (min-width: 1921px) {
+  /* Very wide screen, non-retina */
+  body { background-image: url("http://s3.amazonaws.com/tenhundfeld.org/img/blueridge_2880.jpg"); }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 720px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 720px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (max-width: 720px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 720px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 720px),
+only screen and (                min-resolution: 192dpi) and (max-width: 720px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 720px) {
+  /* Small screen, retina */
+  body { background-image: url("http://s3.amazonaws.com/tenhundfeld.org/img/blueridge_1440.jpg"); }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 721px) and (max-width: 960px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 721px) and (max-width: 960px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 721px) and (max-width: 960px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 721px) and (max-width: 960px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 721px) and (max-width: 960px),
+only screen and (                min-resolution: 192dpi) and (min-width: 721px) and (max-width: 960px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 721px) and (max-width: 960px) {
+  /* Medium screen, retina */
+  body { background-image: url("http://s3.amazonaws.com/tenhundfeld.org/img/blueridge_1920.jpg"); }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 539px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (                min-resolution: 192dpi) and (min-width: 539px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 539px) {
+  /* Large screen, retina */
+  body { background-image: url("http://s3.amazonaws.com/tenhundfeld.org/img/blueridge_2880.jpg"); }
+}
